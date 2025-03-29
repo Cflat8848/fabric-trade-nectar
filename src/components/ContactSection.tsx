@@ -100,6 +100,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium text-textile-800 mb-1">Phone</h4>
                   <p className="text-textile-600">
+                    +977 9857038475<br />
                     +977 9764341987
                   </p>
                 </div>
@@ -143,6 +144,24 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Google Maps location */}
+        <div className="mt-16">
+          <h3 className="font-serif text-2xl font-semibold mb-6 text-textile-800 text-center">Our Location</h3>
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8627029797996!2d83.4670627!3d27.6964417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39936d7c72e6284d%3A0x8a2a59e513c2ec4b!2sSarswoti%20Fabric%20House!5e0!3m2!1sen!2snp!4v1712490010662!5m2!1sen!2snp" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Paiyun Kalika Textile Traders Location"
+              aria-label="Google Maps location of Paiyun Kalika Textile Traders"
+            ></iframe>
           </div>
         </div>
       </div>

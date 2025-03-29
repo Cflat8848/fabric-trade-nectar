@@ -27,7 +27,7 @@ const Footer = () => {
               <a href={`https://wa.me/9815122024`} className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
                 <MessageSquare className="h-5 w-5" />
               </a>
-              <a href="tel:+9779764341987" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
+              <a href="tel:+9779857038475" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
                 <Phone className="h-5 w-5" />
               </a>
             </div>
