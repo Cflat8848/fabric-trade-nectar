@@ -4,12 +4,19 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-texture opacity-10"></div>
+      <div className="absolute inset-0 sky-gradient opacity-90"></div>
       <div 
-        className="relative min-h-[70vh] flex items-center bg-gradient-to-r from-textile-100 to-fabric-50"
+        className="relative min-h-[70vh] flex items-center"
       >
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/5704f6d7-bda1-4bc1-afca-fc7b6df1f714.png" 
+                alt="Paiyun Kalika Logo" 
+                className="h-24 mb-4 hidden md:block" 
+              />
+            </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-textile-950">
               Premium Textile <span className="text-fabric-700">Imports</span> for Nepal's Garment Industry
             </h1>
@@ -25,7 +32,7 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-textile-300 text-textile-800"
+                className="border-textile-300 text-textile-800 bg-white/80 backdrop-blur-sm"
                 size="lg"
               >
                 Contact Us

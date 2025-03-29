@@ -11,13 +11,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white/95 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="bg-white/80 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <span className="font-serif text-2xl font-bold text-fabric-800">Paiyun Kalika</span>
-              <span className="ml-2 text-sm font-medium text-textile-600">Textile Traders</span>
+              <img 
+                src="/lovable-uploads/5704f6d7-bda1-4bc1-afca-fc7b6df1f714.png" 
+                alt="Paiyun Kalika Logo" 
+                className="h-12 mr-3" 
+              />
+              <div className="flex flex-col">
+                <span className="font-serif text-xl font-bold text-fabric-800">Paiyun Kalika</span>
+                <span className="text-xs font-medium text-textile-600">Textile Traders</span>
+              </div>
             </a>
           </div>
 
