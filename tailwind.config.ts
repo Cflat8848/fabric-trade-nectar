@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				textile: {
+					"50": "#f5f7fa",
+					"100": "#ebeef3",
+					"200": "#d2dae6",
+					"300": "#adbbd1",
+					"400": "#8296b9",
+					"500": "#6479a1",
+					"600": "#4f6186",
+					"700": "#414f6c",
+					"800": "#38435c",
+					"900": "#323b4e",
+					"950": "#202531",
+				},
+				fabric: {
+					"50": "#f9f6f5",
+					"100": "#f0e9e7",
+					"200": "#e0d3ce",
+					"300": "#ccb4ac",
+					"400": "#b59085",
+					"500": "#9e7467",
+					"600": "#8d655a",
+					"700": "#7b544a",
+					"800": "#69483f",
+					"900": "#5a3e37",
+					"950": "#301f1b",
 				}
 			},
 			borderRadius: {
@@ -89,6 +116,13 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'sans-serif'],
+				'serif': ['Playfair Display', 'serif'],
+			},
+			backgroundImage: {
+				'texture': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmMjAiPjwvcmVjdD4KPHBhdGggZD0iTTAgMEw0IDRaTTQgMEwwIDRaIiBzdHJva2U9IiNjY2NjY2MxMCIgc3Ryb2tlLXdpZHRoPSIwLjUiPjwvcGF0aD4KPC9zdmc+')",
 			}
 		}
 	},
