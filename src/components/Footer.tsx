@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -24,7 +24,10 @@ const Footer = () => {
               <a href="#" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
+              <a href={`https://wa.me/9815122024`} className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
+                <MessageSquare className="h-5 w-5" />
+              </a>
+              <a href="tel:+9779764341987" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
                 <Phone className="h-5 w-5" />
               </a>
             </div>
@@ -47,6 +50,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-textile-300 hover:text-white transition-colors">Home</a></li>
               <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">Products</a></li>
+              <li><a href="#gallery" className="text-textile-300 hover:text-white transition-colors">Gallery</a></li>
               <li><a href="#about" className="text-textile-300 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#contact" className="text-textile-300 hover:text-white transition-colors">Contact</a></li>
             </ul>

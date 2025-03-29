@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageSquare } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -100,8 +100,19 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium text-textile-800 mb-1">Phone</h4>
                   <p className="text-textile-600">
-                    +977 123 456 789<br />
-                    +977 987 654 321
+                    +977 9764341987
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <MessageSquare className="w-5 h-5 text-fabric-700" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-textile-800 mb-1">WhatsApp</h4>
+                  <p className="text-textile-600">
+                    +977 9815122024
                   </p>
                 </div>
               </div>
