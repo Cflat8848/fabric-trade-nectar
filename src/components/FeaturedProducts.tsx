@@ -30,32 +30,32 @@ const FeaturedProducts = () => {
     {
       name: "PSY PK Fabric",
       description: "High-quality polyester fabric with excellent durability and color retention.",
-      imageUrl: "https://images.unsplash.com/photo-1589891685388-75b9a433c9a4?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/493507fb-d08a-44b5-ae17-7736eb3ce961.png"
     },
     {
       name: "Super Polly",
       description: "Versatile polyester blend with enhanced softness and breathability.",
-      imageUrl: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/49b8d078-1ba0-4087-8a8c-58787cfc65ad.png"
     },
     {
       name: "Honeycomb Fabric",
       description: "Textured fabric with distinctive honeycomb pattern, ideal for sportswear.",
-      imageUrl: "https://images.unsplash.com/photo-1617796110702-9a4a02245728?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/7cddec15-ffd1-4343-985b-4bf7b72263a8.png"
     },
     {
       name: "NSY Fabric",
       description: "Premium synthetic fabric known for its smooth texture and performance features.",
-      imageUrl: "https://images.unsplash.com/photo-1598030304671-5aa1d6f13fde?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/16d67d17-d5da-49b6-b17f-1c4ec20fb34e.png"
     },
     {
       name: "Wrinkle Fabric",
       description: "Specialized fabric with intentional texture, adding visual interest to garments.",
-      imageUrl: "https://images.unsplash.com/photo-1579478632731-c91fbcfc74be?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/5894a7e7-07a8-4862-ad0a-203657833e88.png"
     },
     {
-      name: "Outlander Hosiery",
+      name: "Sports Fabrics",
       description: "Durable knitted fabric, perfect for comfortable and long-lasting garments.",
-      imageUrl: "https://images.unsplash.com/photo-1606988476352-6f21462382cf?q=80&w=700&auto=format&fit=crop"
+      imageUrl: "/lovable-uploads/08d378d7-aeff-4af2-a022-7f75a85218f9.png"
     }
   ];
 

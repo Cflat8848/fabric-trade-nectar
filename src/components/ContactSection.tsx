@@ -125,8 +125,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium text-textile-800 mb-1">Email</h4>
                   <p className="text-textile-600">
-                    info@paiyunkalika.com<br />
-                    sales@paiyunkalika.com
+                    8848sandip@gmail.com
                   </p>
                 </div>
               </div>
