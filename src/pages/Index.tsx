@@ -6,12 +6,14 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import ShopGallery from "@/components/ShopGallery";
 import Footer from "@/components/Footer";
+import ImageCarousel from "@/components/ImageCarousel";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col sky-gradient">
       <Navbar />
       <main className="flex-grow">
+        <ImageCarousel />
         <Hero />
         <div className="card-glass mx-4 md:mx-8 lg:mx-16 my-8 rounded-xl overflow-hidden">
           <FeaturedProducts />
