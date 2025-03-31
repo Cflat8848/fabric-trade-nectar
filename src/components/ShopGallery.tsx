@@ -1,5 +1,13 @@
 
+import { useState } from "react";
+
 const ShopGallery = () => {
+  const [selectedImage, setSelectedImage] = useState<null | {
+    src: string;
+    alt: string;
+    caption: string;
+  }>(null);
+
   const galleryImages = [
     {
       src: "/lovable-uploads/cf4df587-4337-40fe-ad57-4da6a5e897b2.png",
@@ -43,6 +51,14 @@ const ShopGallery = () => {
     }
   ];
 
+  const openImageModal = (image: { src: string; alt: string; caption: string }) => {
+    setSelectedImage(image);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section id="gallery" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -57,7 +73,11 @@ const ShopGallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryImages.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div 
+              key={index} 
+              className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              onClick={() => openImageModal(image)}
+            >
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={image.src}
@@ -72,6 +92,30 @@ const ShopGallery = () => {
           ))}
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4" onClick={closeImageModal}>
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="absolute top-4 right-4 bg-white rounded-full p-2 text-black hover:bg-gray-200 transition-colors"
+              onClick={closeImageModal}
+            >
+              ✕
+            </button>
+            <div className="bg-white p-4 rounded-lg">
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.alt} 
+                className="w-full h-auto max-h-[80vh] object-contain"
+              />
+              <div className="p-4 text-center">
+                <p className="text-textile-800 font-medium">{selectedImage.caption}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

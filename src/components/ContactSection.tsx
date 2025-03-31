@@ -21,6 +21,14 @@ const ContactSection = () => {
     window.open(`https://wa.me/9815122024?text=${whatsappMessage}`, '_blank');
   };
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/9815122024', '_blank');
+  };
+
+  const openMapLocation = () => {
+    window.open('https://maps.app.goo.gl/KmAwCt7uUgJLLGUP7', '_blank');
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -141,6 +149,7 @@ const ContactSection = () => {
                   className="flex items-start hover:text-fabric-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={openWhatsApp}
                 >
                   <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
                     <MessageSquare className="w-5 h-5 text-fabric-700" />
@@ -190,7 +199,10 @@ const ContactSection = () => {
         {/* Google Maps location */}
         <div className="mt-16">
           <h3 className="font-serif text-2xl font-semibold mb-6 text-textile-800 text-center">Our Location</h3>
-          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+          <div 
+            className="w-full h-96 rounded-lg overflow-hidden shadow-md cursor-pointer"
+            onClick={openMapLocation}
+          >
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8627029797996!2d83.4670627!3d27.6964417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39936d7c72e6284d%3A0x8a2a59e513c2ec4b!2sSarswoti%20Fabric%20House!5e0!3m2!1sen!2snp!4v1712490010662!5m2!1sen!2snp" 
               width="100%" 

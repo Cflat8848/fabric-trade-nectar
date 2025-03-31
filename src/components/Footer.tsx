@@ -2,6 +2,10 @@
 import { Facebook, Instagram, Mail, Phone, MessageSquare } from "lucide-react";
 
 const Footer = () => {
+  const openWhatsApp = () => {
+    window.open('https://wa.me/9815122024', '_blank');
+  };
+
   return (
     <footer className="bg-textile-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -15,7 +19,12 @@ const Footer = () => {
               Leading importer and supplier of premium fabrics from China and India to Nepal's garment manufacturing industry.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
+              <a 
+                href="https://www.facebook.com/share/1F8nuRHdn4/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
@@ -24,7 +33,14 @@ const Footer = () => {
               <a href="mailto:8848sandip@gmail.com" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href={`https://wa.me/9815122024`} className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
+              <a 
+                href="#" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  openWhatsApp();
+                }}
+                className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors"
+              >
                 <MessageSquare className="h-5 w-5" />
               </a>
               <a href="tel:+9779857038475" className="bg-textile-800 hover:bg-textile-700 p-2 rounded-full transition-colors">
@@ -36,12 +52,12 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-xl font-semibold mb-4">Our Products</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">PSY PK Fabric</a></li>
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">Super Polly</a></li>
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">Honeycomb Fabric</a></li>
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">NSY Fabric</a></li>
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">Wrinkle Fabric</a></li>
-              <li><a href="#" className="text-textile-300 hover:text-white transition-colors">Sports Fabrics</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">PSY PK Fabric</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">Super Polly</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">Honeycomb Fabric</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">NSY Fabric</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">Wrinkle Fabric</a></li>
+              <li><a href="#products" className="text-textile-300 hover:text-white transition-colors">Sports Fabrics</a></li>
             </ul>
           </div>
           
