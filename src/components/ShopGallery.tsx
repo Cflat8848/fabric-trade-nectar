@@ -15,6 +15,31 @@ const ShopGallery = () => {
       src: "/lovable-uploads/49dc222c-4e01-470b-b44e-a58948c44395.png",
       alt: "Team members with textile partners",
       caption: "Paiyun Kalika team with our international partners"
+    },
+    {
+      src: "/lovable-uploads/8fdd4aea-b623-449c-b758-c034ef114b0e.png",
+      alt: "Team at China textile fair with manufacturing equipment",
+      caption: "Our team exploring advanced textile machinery at Keqiao Textile Expo"
+    },
+    {
+      src: "/lovable-uploads/e85c0c06-79b8-41e2-b635-a0818648bac5.png",
+      alt: "International Textile Fair in China with flags display",
+      caption: "Participation at the International Textile Conference in China"
+    },
+    {
+      src: "/lovable-uploads/5f737a7e-f869-4bc1-8d91-021800563870.png",
+      alt: "Textile expo entrance in Keqiao, China",
+      caption: "At the 26th Keqiao Textile Expo in Shaoxing, China"
+    },
+    {
+      src: "/lovable-uploads/34e4c7e7-6f89-4f95-a0fd-eda69681c90b.png",
+      alt: "Keqiao Textile Expo entrance with team member",
+      caption: "The 7th World Textile Merchandising Conference in China"
+    },
+    {
+      src: "/lovable-uploads/93e368d0-fa25-45eb-8c9b-1001f3ed6206.png",
+      alt: "Meeting with Chinese textile manufacturers",
+      caption: "Building relationships with textile manufacturers in China"
     }
   ];
 
@@ -23,10 +48,10 @@ const ShopGallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-textile-800 mb-4">
-            Our Shop & Operations
+            International Trade Fair Participation
           </h2>
           <p className="text-textile-600 max-w-2xl mx-auto">
-            Take a glimpse into our fabric trading operations, warehouse, and international partnerships.
+            View our active participation in international textile trade fairs, particularly in China, where we source premium fabrics for the Nepali market.
           </p>
         </div>
 

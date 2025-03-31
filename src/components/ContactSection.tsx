@@ -3,8 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, MessageSquare } from "lucide-react";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Prepare WhatsApp message
+    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+    
+    // Open WhatsApp with the message
+    window.open(`https://wa.me/9815122024?text=${whatsappMessage}`, '_blank');
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -21,7 +37,7 @@ const ContactSection = () => {
           <div className="bg-textile-50 p-8 rounded-lg">
             <h3 className="font-serif text-2xl font-semibold mb-6 text-textile-800">Get In Touch</h3>
             
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-textile-700 mb-1">
@@ -31,6 +47,9 @@ const ContactSection = () => {
                     id="name" 
                     placeholder="Your name" 
                     className="bg-white"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
                   />
                 </div>
                 <div>
@@ -42,6 +61,9 @@ const ContactSection = () => {
                     type="email" 
                     placeholder="Your email" 
                     className="bg-white"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                 </div>
               </div>
@@ -54,6 +76,9 @@ const ContactSection = () => {
                   id="subject" 
                   placeholder="Subject of your message" 
                   className="bg-white"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  required
                 />
               </div>
               
@@ -66,11 +91,15 @@ const ContactSection = () => {
                   placeholder="Your message" 
                   rows={5}
                   className="bg-white"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </div>
               
-              <Button className="w-full bg-fabric-700 hover:bg-fabric-800 text-white">
-                Send Message
+              <Button type="submit" className="w-full bg-fabric-700 hover:bg-fabric-800 text-white">
+                <MessageSquare className="w-4 h-4 mr-2" />
+                Send on WhatsApp
               </Button>
             </form>
           </div>
@@ -107,27 +136,39 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
-                  <MessageSquare className="w-5 h-5 text-fabric-700" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-textile-800 mb-1">WhatsApp</h4>
-                  <p className="text-textile-600">
-                    +977 9815122024
-                  </p>
-                </div>
+                <a 
+                  href="https://wa.me/9815122024" 
+                  className="flex items-start hover:text-fabric-700 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <MessageSquare className="w-5 h-5 text-fabric-700" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-textile-800 mb-1">WhatsApp</h4>
+                    <p className="text-textile-600">
+                      +977 9815122024
+                    </p>
+                  </div>
+                </a>
               </div>
               
               <div className="flex items-start">
-                <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
-                  <Mail className="w-5 h-5 text-fabric-700" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-textile-800 mb-1">Email</h4>
-                  <p className="text-textile-600">
-                    8848sandip@gmail.com
-                  </p>
-                </div>
+                <a 
+                  href="mailto:8848sandip@gmail.com" 
+                  className="flex items-start hover:text-fabric-700 transition-colors"
+                >
+                  <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <Mail className="w-5 h-5 text-fabric-700" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-textile-800 mb-1">Email</h4>
+                    <p className="text-textile-600">
+                      8848sandip@gmail.com
+                    </p>
+                  </div>
+                </a>
               </div>
               
               <div className="flex items-start">

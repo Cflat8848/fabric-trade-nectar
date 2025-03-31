@@ -1,7 +1,12 @@
 
 import { Button } from "@/components/ui/button";
+import { MessageSquare } from "lucide-react";
 
 const Hero = () => {
+  const openWhatsApp = () => {
+    window.open('https://wa.me/9815122024', '_blank');
+  };
+
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 sky-gradient opacity-90"></div>
@@ -34,7 +39,9 @@ const Hero = () => {
                 variant="outline" 
                 className="border-textile-300 text-textile-800 bg-white/80 backdrop-blur-sm"
                 size="lg"
+                onClick={openWhatsApp}
               >
+                <MessageSquare className="w-5 h-5 mr-2" />
                 Contact Us
               </Button>
             </div>
