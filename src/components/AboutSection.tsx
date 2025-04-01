@@ -2,6 +2,11 @@
 import { MapPin, Users, TrendingUp, Truck } from "lucide-react";
 
 const AboutSection = () => {
+  const openMapLocation = () => {
+    window.open('https://maps.app.goo.gl/nn945Ls5VPQ7Tpnq5', '_blank');
+    alert('Shop coordinates: 27.6964417, 83.4670627');
+  };
+  
   return (
     <section id="about" className="py-16 md:py-24 bg-textile-50">
       <div className="container mx-auto px-4">
@@ -21,11 +26,14 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-textile-100">
+            <div 
+              className="bg-white p-6 rounded-lg shadow-sm border border-textile-100 cursor-pointer hover:shadow-md transition-shadow" 
+              onClick={openMapLocation}
+            >
               <div className="w-12 h-12 bg-fabric-100 rounded-full flex items-center justify-center mb-4">
                 <MapPin className="w-6 h-6 text-fabric-700" />
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-2 text-textile-800">Strategic Location</h3>
+              <h3 className="font-serif text-xl font-semibold mb-2 text-textile-800 underline">Strategic Location</h3>
               <p className="text-textile-600 text-sm">Centrally located in Butwal, Kalikanagar for efficient distribution throughout Nepal.</p>
             </div>
             
