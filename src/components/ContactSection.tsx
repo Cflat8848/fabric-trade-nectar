@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -26,7 +25,10 @@ const ContactSection = () => {
   };
 
   const openMapLocation = () => {
-    window.open('https://maps.app.goo.gl/KmAwCt7uUgJLLGUP7', '_blank');
+    // Open with exact coordinates of the shop
+    window.open('https://maps.app.goo.gl/KmAwCt7uUgJLLGUP7?g_st=iw&entry=ttu', '_blank');
+    // Alternative with exact coordinates
+    // window.open('https://www.google.com/maps?q=27.6964417,83.4670627', '_blank');
   };
 
   return (
