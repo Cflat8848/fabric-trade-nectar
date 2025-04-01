@@ -26,9 +26,9 @@ const ContactSection = () => {
 
   const openMapLocation = () => {
     // Open with exact coordinates of the shop
-    window.open('https://maps.app.goo.gl/KmAwCt7uUgJLLGUP7?g_st=iw&entry=ttu', '_blank');
-    // Alternative with exact coordinates
-    // window.open('https://www.google.com/maps?q=27.6964417,83.4670627', '_blank');
+    window.open('https://maps.app.goo.gl/v3kZbbu36PiaNBHi7', '_blank');
+    // Show coordinates in alert
+    alert('Shop coordinates: 27.6964417, 83.4670627');
   };
 
   return (

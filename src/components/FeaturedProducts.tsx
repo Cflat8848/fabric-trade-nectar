@@ -81,13 +81,13 @@ const FeaturedProducts = () => {
       name: "PSY PK Fabric",
       description: "High-quality polyester fabric with excellent durability and color retention.",
       imageUrl: "/lovable-uploads/493507fb-d08a-44b5-ae17-7736eb3ce961.png",
-      fabricTypes: ["Track suit", "Jacket", "Outer wear", "Trekking wear"]
+      fabricTypes: ["Formal t-shirt", "Fancy wear", "School dress", "Office wear"]
     },
     {
       name: "Super Polly",
       description: "Versatile polyester blend with enhanced softness and breathability.",
       imageUrl: "/lovable-uploads/49b8d078-1ba0-4087-8a8c-58787cfc65ad.png",
-      fabricTypes: ["Formal t-shirt", "Fancy wear", "School dress", "Office wear"]
+      fabricTypes: ["Track suit", "Jacket", "Outer wear", "Trekking wear"]
     },
     {
       name: "Honeycomb Fabric",
