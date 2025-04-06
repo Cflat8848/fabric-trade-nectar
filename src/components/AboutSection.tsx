@@ -3,7 +3,7 @@ import { MapPin, Users, TrendingUp, Truck } from "lucide-react";
 
 const AboutSection = () => {
   const openMapLocation = () => {
-    window.open('https://maps.app.goo.gl/nn945Ls5VPQ7Tpnq5', '_blank');
+    window.open('https://maps.app.goo.gl/PgWL2E6D3imV1wha7', '_blank');
     alert('Shop coordinates: 27.6964417, 83.4670627');
   };
   

@@ -27,7 +27,7 @@ const ContactSection = () => {
 
   const openMapLocation = () => {
     // Open with the new link
-    window.open('https://maps.app.goo.gl/nn945Ls5VPQ7Tpnq5', '_blank');
+    window.open('https://maps.app.goo.gl/PgWL2E6D3imV1wha7', '_blank');
     // Show coordinates in alert
     alert('Shop coordinates: 27.6964417, 83.4670627');
   };
@@ -120,17 +120,25 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
-                  <MapPin className="w-5 h-5 text-fabric-700" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-textile-800 mb-1">Address</h4>
-                  <p className="text-textile-600">
-                    Kalikanagar, Butwal<br />
-                    Rupandehi District<br />
-                    Nepal
-                  </p>
-                </div>
+                <a 
+                  href="https://maps.app.goo.gl/PgWL2E6D3imV1wha7" 
+                  className="flex items-start hover:text-fabric-700 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={openMapLocation}
+                >
+                  <div className="w-10 h-10 bg-fabric-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <MapPin className="w-5 h-5 text-fabric-700" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-textile-800 mb-1">Address</h4>
+                    <p className="text-textile-600 underline">
+                      Kalikanagar, Butwal<br />
+                      Rupandehi District<br />
+                      Nepal
+                    </p>
+                  </div>
+                </a>
               </div>
               
               <div className="flex items-start">
@@ -201,7 +209,17 @@ const ContactSection = () => {
         
         {/* Google Maps location */}
         <div className="mt-16">
-          <h3 className="font-serif text-2xl font-semibold mb-6 text-textile-800 text-center">Our Location</h3>
+          <h3 className="font-serif text-2xl font-semibold mb-6 text-textile-800 text-center">
+            <a 
+              href="https://maps.app.goo.gl/PgWL2E6D3imV1wha7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-fabric-700 transition-colors"
+              onClick={openMapLocation}
+            >
+              Our Location
+            </a>
+          </h3>
           <div 
             className="w-full h-96 rounded-lg overflow-hidden shadow-md cursor-pointer"
             onClick={openMapLocation}
