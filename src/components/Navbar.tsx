@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <img 
-                src="/lovable-uploads/5704f6d7-bda1-4bc1-afca-fc7b6df1f714.png" 
+                src="/lovable-uploads/d349a0be-eee9-479a-92d0-e52f3ba3695b.png" 
                 alt="Paiyun Kalika Logo" 
                 className="h-12 mr-3" 
               />

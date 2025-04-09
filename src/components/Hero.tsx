@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="max-w-3xl">
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/5704f6d7-bda1-4bc1-afca-fc7b6df1f714.png" 
+                src="/lovable-uploads/d349a0be-eee9-479a-92d0-e52f3ba3695b.png" 
                 alt="Paiyun Kalika Logo" 
                 className="h-24 mb-4 hidden md:block" 
               />
